@@ -10,6 +10,20 @@ v)  size of() operator
 2) c)compiler error in line " Derived *dp = new Base;
 
 
+3) Multipath Inheritance in C++ is derivation of a class from other derived classes, which are derived from the same base class. The hierarchical problem that arises when using multipath inheritance refers to a derived class having more than one parent class that 
+defines property or methods with the same name. 
+This problem can be resolved by
+i)The order in which the superclasses or parents are given define which property or method will be accessible by the name; the others will remain hidden.
+ii) The subclass must resolve the problem by providing a property or method with the name, and by defining how to use the
+ones from its parents, resolve the ambiguity with the class and a scope resolution operator.
+
+4) A virtual function will become pure virtual function when you append "=0" at the end of declaration of virtual function. 
+Pure virtual function doesn't have body or implementation. We must implement all pure virtual functions in derived class.
+
+Syntax:
+ virtual void draw () const = 0; 
+"= 0" is known as a pure specifier.
+
 5)catch(…) is used to catch all types of exceptions arising in the program.
 
 PART-B
@@ -76,4 +90,49 @@ obj.disp();
 return 0;
 }
 
-8)
+8)Base class should contain a default constructor. 
+Base class parameterized constructor should be invoked inside derived class parameterized constructor.
+Base class parameterized constructor should be the first statement in derived class parameterized constructor.
+Only one base class constructor is called within fhe derived class constructor.
+baseclass::constructor (parameters);
+
+Example:
+#include<string.h>
+#include<iostream.h>
+#include<conio.h>
+Class student
+{
+ char name[20],course[20];
+ public:
+ student()
+}
+student (char name[20],char course[20])
+{Strcpy(thisname,name);
+Strcpy (thiscourse,course);
+}
+Void showstudent()
+{
+Cout<<"Name"<<name<<end1;
+Cout<<"Course"<<course<<end1;
+}
+Class marks:public student
+int m,p,c;
+public:
+marks( char name [20],char course [20],int m,int p,int c)
+student::student name ,course
+thism=m;
+Thisp=p;
+thisc=c;
+}
+void showmarks()
+{
+cout <<m <<ends <<p<< ends <<c;}};
+Void main()
+{ clrscr();
+ marks m("Ram","mpc",60,72,85);
+m.showstudent();
+m.showmarks();
+getch();
+}
+
+9)
