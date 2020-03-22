@@ -135,4 +135,30 @@ m.showmarks();
 getch();
 }
 
-9)
+9)In runtime polymorphism binding function call and its code occurs at runtime.
+This means that the exact function that is bound to need not be known as
+Compile time.
+Virtual function are used to achieve runtime polymorphism.when we use the same function name in both base and derived class
+The function in base class is declared as virtual using the keyword "virtual"preceding the normal declaration.
+
+
+
+10)#include<iostream>
+int main ()
+{
+int num,dem,result;
+cout<<"enter the numerator and denominator ";
+cin>>num>>dem;
+try
+ {
+if(dem==0)
+ throw dem;
+result=num/dem;
+}
+catch(int x)
+{
+cout <<" Exception Divide by zero is not allowed ";
+}
+cout <<"division is"<<result;
+return 0;
+}
