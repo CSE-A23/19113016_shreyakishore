@@ -70,6 +70,7 @@ result.display();
 result1.display();
 getch();
 }
+
 7) if derived class defines same function as defined in its base class, it is known as function overriding in C++. It is used to achieve runtime polymorphism. It enables you to provide specific implementation of the function which is already provided by its base class.
    #include <iostream>
 class BaseClass {
@@ -141,6 +142,30 @@ Compile time.
 Virtual function are used to achieve runtime polymorphism.when we use the same function name in both base and derived class
 The function in base class is declared as virtual using the keyword "virtual"preceding the normal declaration.
 
+#include <iostream>
+class Base
+{
+public:
+void showvalue()
+{
+cout << "Class::Base"<<endl;
+}
+};
+class Derived:public Base
+{
+ public:
+void showvalue()
+{
+cout << "Class::Derived"<<endl;
+ }
+};
+int main()
+{
+Base b;
+Derived d;
+b.showvalue();
+d.showvalue();
+}
 
 
 10)#include<iostream>
