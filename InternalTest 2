@@ -1,0 +1,8 @@
+1)The operators which cannot be overloaded are
+i)  ?: conditional operator
+ii) .  member selection
+iii).* member selection with pointers
+iv) :: scope resolution operator
+v)  size of() operator
+
+2) 
