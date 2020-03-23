@@ -1,7 +1,7 @@
 include <iostream>
 using namespace std;
 
-struct time
+struct MYTIME
 {
   int seconds;
   int minutes;
