@@ -1,0 +1,59 @@
+#include<iostream>
+#include<string>
+class TOYS
+{
+public:
+char C1[4],C2[10],t[15];
+double S1,S2;
+void get()
+{
+int n;
+TOYS t1;
+cout<<"Colour";
+cout<<"Number of Toys";
+cin>>n;
+if(n==1)
+{
+cout<<"Enter color of toy:"<<"\n";
+cin>>C1;
+operator !();
+}
+else
+{
+cout<<"Color of toy1:"<<"\n";
+cin>>C1;
+cout<<"Color of toy2:"<<"\n";
+cin>>C2;
+cout<<"Size of toy1:"<<"\n";
+cin>>S1;
+cout<<"Size of toy2:"<<"\n";
+cin>>S2;
+}
+ }
+void operator!()
+{
+if(strcmp(C1,"Blue")==0)
+{
+ cout<<"Color:Purple";
+}
+else if(strcmp(C1,"Red")==0)
+{
+cout<<"Color:Blue";
+}
+else
+{
+cout<<"Color:Black";
+}
+}
+void operator+()
+{
+cout<<"New Toy Is of Color:Orange\nTexture:Silky\nSize:"<<S1*S2;
+}
+};
+int main()
+{
+TOY t1;
+cout<<"Combination Of Color.";
+t1.get();
+t1.get();
+}
