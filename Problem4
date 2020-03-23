@@ -1,0 +1,40 @@
+#include <iostream>
+#include <string.h>
+class colour
+{
+private:
+char str[50];
+static int count;
+public:
+colour()
+{
+count++;
+}
+void initcolour(char s[])
+{
+strcpy(str,s);
+}
+void printcolour(void)
+{
+cout << str << endl;
+}
+static int totalObjects(void)
+{
+return count;
+}
+};
+int colour::count =0;
+int main()
+{
+colour C1;
+colour C2;
+colour C3;
+C1.initcolour("red");
+C2.initcolour("blue");
+C3.initcolour("green");
+C1.printcolout();
+C2.printcolour();
+C3.printcolour();
+cout << "Total objects created: " << colour::totalObjects() << endl;
+return 0;
+}
