@@ -1,0 +1,39 @@
+#include<iostream>
+using namespace std;
+class distance
+{                                                                    
+public:
+float kilometer,metre;
+public:
+void accept()
+{
+cout<<"\n Enter Data in kilometer & metre  :  ";
+cin>>kilometer>>metre;
+}
+friend void diff(distance1 d1, distance2 d2);
+friend void sum(distance1 d1, distance2 d2);
+};
+void difference(dist1 d1,dist2 d2)
+{
+int ans, m;
+ans=(d1.km-d2.km);
+m=ans/1000;
+cout<<"\n Difference in Metres=  "<<m<<" metres;
+}
+void sum(dist1 d1, dist2 d2)
+{
+int m,ans;
+ans=(d1.km-d2.km);
+m=ans/1000;
+cout<<"\n Sum in Meters"<<m<<" metres;
+}
+int main()
+{
+dist1 d1;
+dist2 d2;
+d1.accept();
+d2.accept();
+difference(d1,d2);
+sum(d1,d2);
+return 0;
+}
