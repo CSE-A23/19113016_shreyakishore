@@ -1,0 +1,26 @@
+#include<iostream.h>
+#include<conio.h>
+class Rajaworks
+{
+public:
+void Task(int a)
+{
+cout<<"wash the clothes";
+}
+void Task(int b,int c)
+{
+cout<<"read";
+}
+void Task(int d,int e,int f)
+{
+cout<<"book two tickets";
+}
+};
+int main()
+{
+Raja obj;
+obj.Task(1);
+obj.Task(1,1);
+obj.Task(1,1,1);
+return0
+}
